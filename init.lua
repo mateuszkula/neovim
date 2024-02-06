@@ -2,6 +2,10 @@ vim.cmd("set expandtab")
 vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
+vim.cmd("set signcolumn=yes")
+
+vim.opt.termguicolors = true
+
 vim.g.mapleader = " "
 
 
@@ -21,9 +25,7 @@ vim.opt.rtp:prepend(lazypath)
 
 local opts = {}
 
-vim.opt.termguicolors = true
 
 require("lazy").setup("plugins", opts)
-
 
 
